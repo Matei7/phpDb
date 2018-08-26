@@ -1,0 +1,19 @@
+#index.php?action=ArticleController_editArticleError&id
+RewriteEngine on
+
+
+RewriteRule ^login$ index.php?action=LoginController_displayLogin
+RewriteRule ^logout$ index.php?action=LoginController_logout
+RewriteRule ^admin-logout$ index.php?action=LoginController_logoutAdmin
+RewriteRule ^admin$ index.php?action=LoginController_displayAdminLogin
+
+
+
+RewriteRule ^article/([0-9_-]+)$  index.php?action=ArticleController_displayArticle&id=
+RewriteRule ^edit-article/([0-9_-]+)$  index.php?action=ArticleController_editArticle&id=
+RewriteRule ^new-article$  index.php?action=ArticleController_addArticle
+RewriteRule ^register$ index.php?action=LoginController_displayRegister
+RewriteRule ^admin-articles index.php?action=ArticleController_manageArticles
+RewriteRule ^admin-categories index.php?action=CategoryController_manageCategories
+RewriteRule ^homepage index.php?action=HomeController_displayHomepage
+RewriteRule ^admin-homepage index.php?action=HomeController_displayAdminHomepage

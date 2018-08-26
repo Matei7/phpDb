@@ -1,0 +1,247 @@
+body {
+    background-color: #eff3f8;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: white;
+}
+
+.box {
+    border: 2px solid black;
+    min-width: 200px;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+}
+
+.current-box {
+    background-color: #aaa;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px !important;
+}
+
+table {
+    width: 80%;
+    margin-inside: 1px;
+    border-collapse: collapse;
+    direction: ltr;
+    margin: 20px auto;
+    table-layout: auto;
+}
+
+th {
+    background: #e07163;
+}
+
+tr:nth-child(2n+2) {
+    background: #ddd;
+}
+
+.left-container {
+    display: inline-block;
+    width: 45%;
+    margin: auto;
+    vertical-align: top;
+}
+
+.right-container {
+    display: inline-block;
+    max-width: 45%;
+    margin: auto;
+    vertical-align: top;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pagination {
+    padding: 15px;
+    width: 12%;
+    margin: auto;
+}
+
+.drop-btn {
+    background-color: #e07163;
+    color: white;
+    padding: 16px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    max-width: 100px;
+    min-width: 70px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .drop-btn {
+    background-color: #e07163;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.menu {
+    height: 72px;
+    float: none;
+    padding: 5px 10px;
+    background: #e07163;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    z-index: 2;
+}
+
+.menu-container {
+    background-color: #e07163;
+}
+
+.menu::after {
+    content: "";
+    clear: both;
+}
+
+.small-container {
+    padding: 25px;
+    margin: auto;
+}
+
+.small-container::after {
+    content: "";
+    clear: both;
+}
+
+#comment_name, #comment_content, #submit {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.comments {
+    max-height: 300px;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    overflow-y: auto;
+}
+
+.new-comment {
+    display: inline-block;
+    max-width: 45%;
+    vertical-align: top;
+    margin: 25px 50px;
+
+}
+
+.comment {
+    padding: 5px 15px;
+}
+
+.sender {
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+}
+
+.cat-link {
+    color: white;
+    font-weight: bold;
+}
+
+.cat-link:hover {
+    color: #ddd;
+}
+
+.pagination {
+    direction: ltr;
+}
+
+.pagination > li {
+    display: inline-block;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+#table-info {
+    direction: ltr;
+}
+
+.pagination > li > a {
+    color: #e07163;
+}
+
+a {
+    color: #e07163;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #e07163;
+    border-color: #e07163;
+}
+
+.article-container {
+    direction: ltr;
+}
+
+#article-image {
+    max-width: 500px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.paginate_button {
+    display: inline-block;
+}
+
+.pagination > li {
+    display: inline-block !important;
+}
+
+label.error {
+    color: red;
+}
