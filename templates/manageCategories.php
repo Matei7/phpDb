@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="http://localhost/phpDb/">
     <meta charset="UTF-8">
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css"/>

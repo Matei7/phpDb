@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="http://localhost/phpDb/">
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/jquery.dropdown.css">
